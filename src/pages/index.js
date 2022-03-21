@@ -1,5 +1,6 @@
 import React from 'react';
 import ComponentHeader from '../components/ComponentHeader';
+import FeaturedBanner from '../components/FeaturedBanner';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import SvgCharts from '../svg/SvgCharts';
@@ -7,6 +8,7 @@ import SvgCharts from '../svg/SvgCharts';
 const Index = () => (
   <Layout>
     <ComponentHeader />
+    <FeaturedBanner />
     <SplitSection
       id="services"
       primarySlot={

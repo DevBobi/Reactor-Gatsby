@@ -4,13 +4,13 @@ import Button from './Button';
 import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 
 const ComponentHeader = () => (
-    <header className='bg-black-olive'>
-        <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
+    <header className='bg-black-olive my-1'>
+        <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-3 px-4">
             <div className="flex mt-4 sm:mt-0">
-                <AnchorLink className="px-4 text-white" href="#news">
+                <AnchorLink className="pr-4 text-white font-medium" href="#news">
                     News
                 </AnchorLink>
-                <AnchorLink className="px-4 text-white" href="#events">
+                <AnchorLink className="pr-4 text-white font-medium" href="#events">
                     Events
                 </AnchorLink>
             </div>

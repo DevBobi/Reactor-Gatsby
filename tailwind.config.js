@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'black-olive': '#404040',
+        'black-olive': '#2F3333',
         primary: {
           lighter: 'hsl(207, 73%, 52%)',
           default: 'hsl(207, 73%, 57%)',
