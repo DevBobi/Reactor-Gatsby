@@ -1,5 +1,6 @@
 import React from 'react';
-import ComponentHeader from '../components/ComponentHeader';
+import CardContainer from '../components/CardContainer';
+import ComponentHeader from '../components/CardHeader';
 import FeaturedBanner from '../components/FeaturedBanner';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
@@ -9,6 +10,7 @@ const Index = () => (
   <Layout>
     <ComponentHeader />
     <FeaturedBanner />
+    <CardContainer />
     <SplitSection
       id="services"
       primarySlot={
