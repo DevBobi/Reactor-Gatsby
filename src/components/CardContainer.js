@@ -1,9 +1,12 @@
 import React from 'react';
 import Button from './Button';
+import Card from './Card';
+import SvgCharts from '../svg/SvgCharts';
 
 const CardContainer = () => (
     <div className='bg-white'>
-        <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-8 px-6">
+        {/* card container header */}
+        <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-5 px-6">
             <div className="flex flex-col mt-4 sm:mt-0 ">
                 <h2 className=" font-normal text-4xl">
                     listen to us live
@@ -16,7 +19,14 @@ const CardContainer = () => (
                 <Button>Online</Button>
             </div>
         </div>
+        <hr className='border' />
+        <div class="flex-col basis-1/2 ">
+            <div className='order-first'>
+                <Card />
+            </div>
 
+            <div>09</div>
+        </div>
     </div>
 );
 
