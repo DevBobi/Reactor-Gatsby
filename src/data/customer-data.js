@@ -1,26 +1,35 @@
 export default [
   {
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
-    content:
+    title: 'Lorem ipsum dolor sit amet',
+    date: ' Oct 30, 2021',
+    readingTime: "3 min read",
+    desc:
       'Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.',
-    customerName: 'Jane Doe',
-    customerTitle: 'Director of Research and Data',
-    customerImage: 'https://placeimg.com/150/150/people'
+    author: 'Jane Doe',
+    subTitle: 'Director of Research and Data',
+    img: 'https://i0.wp.com/reacktor.com/wp-content/uploads/2018/10/netflix-remastered-logo-1200x630-2.jpg?zoom=2&resize=200%2C200'
   },
+
   {
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
-    content:
+    title: 'Lorem ipsum dolor sit amet',
+    date: ' Oct 30, 2021',
+    readingTime: "3 min read",
+    desc:
       'Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.',
-    customerName: 'John Doe',
-    customerTitle: 'Director of Research and Data',
-    customerImage: 'https://placeimg.com/150/150/people'
+    author: 'Jane Doe',
+    subTitle: 'Director of Research and Data',
+    img: 'https://i0.wp.com/reacktor.com/wp-content/uploads/2018/10/netflix-remastered-logo-1200x630-2.jpg?zoom=2&resize=200%2C200'
   },
+
   {
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
-    content:
+    title: 'Lorem ipsum dolor sit amet',
+    date: ' Oct 30, 2021',
+    readingTime: "3 min read",
+    desc:
       'Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.',
-    customerName: 'Jane Smith',
-    customerTitle: 'Director of Research and Data',
-    customerImage: 'https://placeimg.com/150/150/people'
-  }
+    author: 'Jane Doe',
+    subTitle: 'Director of Research and Data',
+    img: 'https://i0.wp.com/reacktor.com/wp-content/uploads/2018/10/netflix-remastered-logo-1200x630-2.jpg?zoom=2&resize=200%2C200'
+  },
+
 ];

@@ -1,11 +1,11 @@
 import React from 'react';
+import customerData from '../data/customer-data';
 import Button from './Button';
 import Card from './Card';
-import SvgCharts from '../svg/SvgCharts';
 
 const CardContainer = () => (
     <div className='bg-white'>
-        {/* card container header */}
+        {/* card container  */}
         <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-5 px-6">
             <div className="flex flex-col mt-4 sm:mt-0 ">
                 <h2 className=" font-normal text-4xl">
@@ -15,17 +15,23 @@ const CardContainer = () => (
                     All the rock your ears want
                 </p>
             </div>
-            <div className="hidden md:block text-white">
-                <Button>Online</Button>
+            <div className="hidden md:block text-black border-black hover:border rounded">
+                <Button>On line</Button>
             </div>
         </div>
         <hr className='border' />
+
+        {/* <----------card ----------> */}
+
         <div class="flex-col basis-1/2 ">
             <div className='order-first'>
-                <Card />
+                {customerData.map(customer => (
+                    <div key={customer.author} className="flex-1 px-3">
+                        <Card customer={customer} />
+                    </div>
+                ))}
+                {/* <Card /> */}
             </div>
-
-            <div>09</div>
         </div>
     </div>
 );

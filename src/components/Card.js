@@ -1,33 +1,54 @@
 import React from 'react';
-import Button from './Button';
+import SvgCharts from '../svg/SvgCharts';
 import Img from '../svg/SvgCharts'
 
-const CardContainer = () => (
+const Card = ({ customer }) => (
     <div>
-        <div className="max-w-md overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+        <div className="dark:bg-coolGray-800 dark:text-coolGray-50">
+            <div className="container grid grid-cols-12 mx-auto dark:bg-coolGray-900">
+                <div className="flex flex-col p-6 col-span-full row-span-full lg:col-span-8 lg:p-10">
+                    <div className='flex flex-row'>
+                        <div className="relative w-25 overflow-hidden pr-5 pt-5">
+                            <img src={customer?.img} />
+                        </div>
 
-            {/* <------Image----> */}
+                        <div>
+                            <h1 className="text-3xl font-normal">{customer.title}</h1>
+                            {/* ::CARD FOOTER */}
+                            <div className="py-3 flex flex-wrap justify-around border-t border-gray-200">
+                                {/* ::Author */}
+                                <span className="py-0.5 flex items-center text-xs text-gray-500 font-semibold tracking-wide cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="mr-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                                    </svg>
+                                    {customer?.author}
+                                </span>
+                                {/* ::Date */}
+                                <span className="py-0.5 px-1.5 flex items-center text-xs text-gray-500 font-semibold tracking-wide">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="mr-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    {customer?.date}
+                                </span>
+                                {/* ::Reading time */}
+                                <span className="py-0.5 px-1.5 flex items-center text-xs text-gray-500 font-semibold tracking-wide">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="mr-1 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                                    </svg>
+                                    {customer?.readingTime}
+                                </span>
+                            </div>
 
-            <div className="w-1/3 bg-cover" src={Img}></div>
+                            <p className="flex-1 pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, reprehenderit adipisci tempore voluptas laborum quod.</p>
 
-            {/* <------Text Card----> */}
+                            <div className="flex items-center justify-between pt-2">
+                                <div className="flex space-x-2">
 
-            <div className="max-w-2xl px-8 py-4 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
-                <div className="flex items-center justify-between">
-                    <span className="text-sm font-light text-gray-600 dark:text-gray-400">Mar 10, 2019</span>
-                    <a className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500">Design</a>
-                </div>
+                                    <span className="self-center text-sm">by Leroy Jenkins</span>
+                                </div>
+                            </div>
+                        </div>
 
-                <div className="mt-2">
-                    <a href="#" className="text-2xl font-bold text-gray-700 dark:text-white hover:text-gray-600 dark:hover:text-gray-200 hover:underline">Accessibility tools for designers and developers</a>
-                    <p className="mt-2 text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!</p>
-                </div>
-
-                <div className="flex items-center justify-between mt-4">
-                    <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline">Read more</a>
-
-                    <div className="flex items-center">
-                        <a className="font-bold text-gray-700 cursor-pointer dark:text-gray-200">Khatab wedaa</a>
                     </div>
                 </div>
             </div>
@@ -35,4 +56,4 @@ const CardContainer = () => (
     </div>
 );
 
-export default CardContainer;
+export default Card;

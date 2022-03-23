@@ -8,7 +8,7 @@ const Header = () => (
   <header className="scroll top-0 bg-black shadow py-3">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
       <div className="flex items-center text-2xl text-white">
-        Bytes Logic
+        {/* Bytes Logic */}
       </div>
       <div class="my-4">
         <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Look for.." />

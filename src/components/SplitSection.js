@@ -12,6 +12,7 @@ const SplitSection = ({ id, primarySlot, secondarySlot, reverseOrder }) => (
             </div>
         </div>
     </section>
+
 );
 
 export default SplitSection;
