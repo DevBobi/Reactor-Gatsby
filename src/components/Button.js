@@ -15,7 +15,6 @@ const Button = ({ children, className = '', size }) => {
         ${className}
         bg-concrete
         hover:bg-concrete
-        hover:border-black
         text-black
         rounded
     `}

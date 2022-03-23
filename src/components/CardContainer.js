@@ -8,15 +8,15 @@ const CardContainer = () => (
         {/* card container  */}
         <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-5 px-6">
             <div className="flex flex-col mt-4 sm:mt-0 ">
-                <h2 className=" font-normal text-4xl">
-                    listen to us live
+                <h2 className=" font-normal text-3xl">
+                    Escuchanos en vivo
                 </h2>
-                <p >
-                    All the rock your ears want
+                <p className=''>
+                    Todo el rock que quieren tus oidos
                 </p>
             </div>
-            <div className="hidden md:block text-black border-black hover:border rounded">
-                <Button>On line</Button>
+            <div className="hidden md:block text-black hover:border-concrete hover:border hover:rounded">
+                <Button>On Line</Button>
             </div>
         </div>
         <hr className='border' />
@@ -26,11 +26,11 @@ const CardContainer = () => (
         <div class="flex-col basis-1/2 ">
             <div className='order-first'>
                 {customerData.map(customer => (
-                    <div key={customer.author} className="flex-1 px-3">
+                    <div key={customer.author} className="flex-1">
                         <Card customer={customer} />
                     </div>
                 ))}
-                {/* <Card /> */}
+
             </div>
         </div>
     </div>

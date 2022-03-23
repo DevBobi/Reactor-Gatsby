@@ -10,23 +10,23 @@ const Header = () => (
       <div className="flex items-center text-2xl text-white">
         {/* Bytes Logic */}
       </div>
-      <div class="my-4">
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Look for.." />
+      <div class="my-4 md:justify-center">
+        <input class="shadow appearance-none border bg-concrete rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Look for.." />
         <div>
-          <div className="flex justify-end pt-3">
+          <div className="flex  justify-end pt-3 ">
             <div className="pl-3">
               <Link to='/'>
-                <p class="text-2xl">  <FaFacebook /></p>
+                <p class="text-3xl text-concrete hover:text-facebook">  <FaFacebook /></p>
               </Link>
             </div>
             <div className="pl-3">
               <Link to='/'>
-                <p class="text-2xl">  <FaTwitter /></p>
+                <p class="text-3xl text-concrete hover:text-twitter">  <FaTwitter /></p>
               </Link>
             </div>
             <div className="pl-3">
               <Link to='/'>
-                <p class="text-2xl">  <FaInstagram /></p>
+                <p class="text-3xl text-concrete hover:text-insta">  <FaInstagram /></p>
               </Link>
             </div>
           </div>
