@@ -5,13 +5,13 @@ import { BsFillShareFill } from "react-icons/bs";
 
 const Card = ({ customer }) => (
     <>
-        <div className="flex flex-col pl-4 pt-3 col-span-full row-span-full lg:col-span-6 lg:pl-6">
+        <div className="flex flex-col pl-4 pt-3 col-span-full row-span-full lg:col-span-6 lg:pl-6  pr-5">
             <div className='flex flex-row py-3'>
                 <div className="bg-contain max-w-sm pr-5 pt-5">
                     <img src={customer?.img} />
                 </div>
                 <div className='py-3'>
-                    <h1 className="text-3xl font-normal">{customer.title}</h1>
+                    <h1 className="text-2xl font-normal mr-2 flow-root">{customer.title}</h1>
                     {/* ::CARD FOOTER */}
                     <div className="py-3 flex flex-wrap content-start border-t border-gray-200">
                         {/* ::Author */}
@@ -38,15 +38,12 @@ const Card = ({ customer }) => (
                     </div>
                     <div className="flex-1 pt-2 pr-10 mr-2 flow-root">
                         <p >{customer?.desc}</p>
-                    </div>
-                    <div className="flex items-center justify-between pt-2">
-                        <div className="flex space-x-2">
-                            <span className="self-center text-normal">Share this:</span>
+                        <div className="flex space-x-2 py-2">
+                            <span className="self-center text-medium">Share this:</span>
                         </div>
                     </div>
-
                     <div className='flex justify-between'>
-                        <button className='px-2 py-1 flex border rounded'>
+                        <button className='px-2 py-1 flex border rounded text-black-50 text-xs'>
                             <span className='pt-1 pr-2'><BsFillShareFill /></span>
                             <span>Share</span>
                         </button>

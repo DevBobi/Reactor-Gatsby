@@ -8,6 +8,7 @@ import SvgCharts from '../svg/SvgCharts';
 import LabelText from '../components/LabelText';
 import customerData from '../data/card-data';
 import Card from '../components/Card';
+import Pagination from '../components/Pagination';
 
 
 const Index = () => (
@@ -15,6 +16,7 @@ const Index = () => (
     <ComponentHeader />
     <FeaturedBanner />
     <CardContainer />
+    <Pagination />
   </Layout>
 );
 
