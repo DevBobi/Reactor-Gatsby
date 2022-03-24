@@ -6,7 +6,7 @@ import Card from './Card';
 const CardContainer = () => (
     <div className='bg-white'>
         {/* card top section */}
-        <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-5 px-6">
+        <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-5 px-10">
             <div className="flex flex-col mt-4 sm:mt-0 ">
                 <h2 className=" font-normal text-3xl">
                     Escuchanos en vivo
@@ -23,7 +23,7 @@ const CardContainer = () => (
 
         {/* <----------card ----------> */}
 
-        <div className='flex flex-col sm:flex-row  lg:col-span-6'>
+        <div className='flex flex-col sm:flex-row  lg:col-span-6 px-4'>
             <div className='justify-start'>
                 {customerData.map(customer => (
                     <div key={customer.author} className="flex-1">
@@ -33,7 +33,7 @@ const CardContainer = () => (
             </div>
 
             {/*<------Side Card------>  */}
-            <div className='content-start pt-10 pr-10 '>
+            <div className='content-start md:hidden sm:hidden lg:block pt-10 pr-10 '>
                 <div className="max-w-lg bg-cover">
                     <img src='http://reacktor.com/wp-content/uploads/2016/04/cropped-bannerreacktor.jpg' />
                 </div>

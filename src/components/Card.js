@@ -42,7 +42,7 @@ const Card = ({ customer }) => (
                             <span className="self-center text-medium">Share this:</span>
                         </div>
                     </div>
-                    <div className='flex justify-between'>
+                    <div >
                         <button className='px-2 py-1 flex border rounded text-black-50 text-xs'>
                             <span className='pt-1 pr-2'><BsFillShareFill /></span>
                             <span>Share</span>
