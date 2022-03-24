@@ -1,11 +1,11 @@
 import React from 'react';
-import customerData from '../data/customer-data';
+import customerData from '../data/card-data';
 import Button from './Button';
 import Card from './Card';
 
 const CardContainer = () => (
     <div className='bg-white'>
-        {/* card container  */}
+        {/* card top section */}
         <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-5 px-6">
             <div className="flex flex-col mt-4 sm:mt-0 ">
                 <h2 className=" font-normal text-3xl">
@@ -23,14 +23,20 @@ const CardContainer = () => (
 
         {/* <----------card ----------> */}
 
-        <div class="flex-col basis-1/2 ">
-            <div className='order-first'>
+        <div className='flex flex-col sm:flex-row  lg:col-span-6'>
+            <div className='justify-start'>
                 {customerData.map(customer => (
                     <div key={customer.author} className="flex-1">
                         <Card customer={customer} />
                     </div>
                 ))}
+            </div>
 
+            {/*<------Side Card------>  */}
+            <div className='content-start pt-10 pr-10 '>
+                <div className="max-w-lg bg-cover">
+                    <img src='http://reacktor.com/wp-content/uploads/2016/04/cropped-bannerreacktor.jpg' />
+                </div>
             </div>
         </div>
     </div>

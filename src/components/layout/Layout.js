@@ -5,7 +5,7 @@ import Header from './Header';
 const Layout = ({ children }) => {
   return (
     <>
-      <div container className='bg-black px-20'>
+      <div container className='bg-black px-20 font-sans'>
         <Header />
         <main className="text-gray-900 ">{children}</main>
         <Footer />

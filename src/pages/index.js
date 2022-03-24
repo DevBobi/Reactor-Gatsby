@@ -6,7 +6,7 @@ import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import SvgCharts from '../svg/SvgCharts';
 import LabelText from '../components/LabelText';
-import customerData from '../data/customer-data';
+import customerData from '../data/card-data';
 import Card from '../components/Card';
 
 
